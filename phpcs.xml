@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<ruleset name="WP Telegram Post Notifier">
+    <description>WordPress Coding Standards for WP Telegram Post Notifier</description>
+    
+    <!-- What to scan -->
+    <file>.</file>
+    <exclude-pattern>/vendor/</exclude-pattern>
+    <exclude-pattern>/node_modules/</exclude-pattern>
+    <exclude-pattern>/admin/build/</exclude-pattern>
+    <exclude-pattern>/tests/</exclude-pattern>
+    
+    <!-- How to scan -->
+    <arg name="colors" />
+    <arg name="extensions" value="php" />
+    <arg value="parallel" />
+    
+    <!-- Rules: Check PHP version compatibility -->
+    <config name="minimum_supported_wp_version" value="6.3" />
+    
+    <!-- Use WordPress Coding Standards -->
+    <rule ref="WordPress-Core" />
+    <rule ref="WordPress-Docs" />
+    <rule ref="WordPress-Extra" />
+    
+    <!-- Allow short array syntax -->
+    <rule ref="Generic.Arrays.DisallowShortArraySyntax">
+        <severity>0</severity>
+    </rule>
+    
+    <!-- Allow short ternary -->
+    <rule ref="WordPress.PHP.DisallowShortTernary">
+        <severity>0</severity>
+    </rule>
+    
+    <!-- Exclude some rules for vendor files -->
+    <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+        <exclude-pattern>/vendor/</exclude-pattern>
+    </rule>
+</ruleset>

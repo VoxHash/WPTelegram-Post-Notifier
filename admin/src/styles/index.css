@@ -1,0 +1,97 @@
+/* WP Telegram Post Notifier Admin Styles */
+
+.wptpn-admin {
+    max-width: 1200px;
+}
+
+.wptpn-loading,
+.wptpn-error {
+    text-align: center;
+    padding: 2rem;
+}
+
+.wptpn-tab-panel {
+    margin-top: 1rem;
+}
+
+.wptpn-tab-content {
+    padding: 1rem 0;
+}
+
+.wptpn-connection-tab .wptpn-token-actions {
+    margin: 1rem 0;
+}
+
+.wptpn-connection-actions {
+    margin: 1rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.wptpn-destinations-list {
+    margin: 1rem 0;
+}
+
+.wptpn-destination-item {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+}
+
+.wptpn-template-preview {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    font-family: monospace;
+}
+
+.wptpn-logs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.wptpn-logs-table th,
+.wptpn-logs-table td {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.wptpn-logs-table th {
+    background: #f9f9f9;
+    font-weight: bold;
+}
+
+.status-success {
+    color: #00a32a;
+}
+
+.status-error {
+    color: #d63638;
+}
+
+.status-pending {
+    color: #dba617;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .wptpn-template-preview {
+        background: #2c2c2c;
+        border-color: #555;
+        color: #fff;
+    }
+    
+    .wptpn-destination-item {
+        border-color: #555;
+        background: #2c2c2c;
+    }
+    
+    .wptpn-logs-table th {
+        background: #2c2c2c;
+    }
+}

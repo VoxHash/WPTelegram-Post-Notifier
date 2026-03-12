@@ -1,0 +1,553 @@
+# WP Telegram Post Notifier
+# Copyright (C) 2026 VoxHash
+# This file is distributed under the MIT License.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Telegram Post Notifier 1.0.0\n"
+"Report-Msgid-Bugs-To: contact@voxhash.dev\n"
+"POT-Creation-Date: 2024-01-01 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"X-Domain: wp-telegram-post-notifier\n"
+
+#: includes/class-plugin.php:45
+msgid "WP Telegram Post Notifier requires PHP %2$s or higher. You are running PHP %1$s."
+msgstr ""
+
+#: includes/class-plugin.php:55
+msgid "WP Telegram Post Notifier requires WordPress %2$s or higher. You are running WordPress %1$s."
+msgstr ""
+
+#: includes/class-plugin.php:65
+msgid "WP Telegram Post Notifier could not be activated due to insufficient requirements."
+msgstr ""
+
+#: includes/class-plugin.php:66
+msgid "Plugin Activation Error"
+msgstr ""
+
+#: includes/helpers.php:200
+msgid "Site Name"
+msgstr ""
+
+#: includes/helpers.php:201
+msgid "Site URL"
+msgstr ""
+
+#: includes/helpers.php:202
+msgid "Post Title"
+msgstr ""
+
+#: includes/helpers.php:203
+msgid "Post Excerpt"
+msgstr ""
+
+#: includes/helpers.php:204
+msgid "Post Content"
+msgstr ""
+
+#: includes/helpers.php:205
+msgid "Post Author"
+msgstr ""
+
+#: includes/helpers.php:206
+msgid "Post Date"
+msgstr ""
+
+#: includes/helpers.php:207
+msgid "Post URL"
+msgstr ""
+
+#: includes/helpers.php:208
+msgid "Short URL"
+msgstr ""
+
+#: includes/helpers.php:209
+msgid "Post Thumbnail URL"
+msgstr ""
+
+#: includes/helpers.php:210
+msgid "Categories"
+msgstr ""
+
+#: includes/helpers.php:211
+msgid "Tags"
+msgstr ""
+
+#: includes/helpers.php:212
+msgid "Price"
+msgstr ""
+
+#: includes/helpers.php:213
+msgid "SKU"
+msgstr ""
+
+#: includes/helpers.php:214
+msgid "Stock Status"
+msgstr ""
+
+#: includes/helpers.php:220
+msgid "Publish"
+msgstr ""
+
+#: includes/helpers.php:221
+msgid "Update"
+msgstr ""
+
+#: includes/helpers.php:222
+msgid "Scheduled to Publish"
+msgstr ""
+
+#: includes/helpers.php:223
+msgid "Pending to Publish"
+msgstr ""
+
+#: includes/helpers.php:230
+msgid "MarkdownV2"
+msgstr ""
+
+#: includes/helpers.php:231
+msgid "HTML"
+msgstr ""
+
+#: includes/helpers.php:232
+msgid "Markdown"
+msgstr ""
+
+#: includes/helpers.php:240
+msgid "Product Published"
+msgstr ""
+
+#: includes/helpers.php:241
+msgid "Product Updated"
+msgstr ""
+
+#: includes/helpers.php:242
+msgid "Price Changed"
+msgstr ""
+
+#: admin/class-admin.php:45
+msgid "Telegram Notifier"
+msgstr ""
+
+#: admin/class-admin.php:46
+msgid "Telegram Notifier"
+msgstr ""
+
+#: admin/class-admin.php:55
+msgid "Telegram Logs"
+msgstr ""
+
+#: admin/class-admin.php:56
+msgid "Telegram Logs"
+msgstr ""
+
+#: admin/class-admin.php:75
+msgid "WP Telegram Post Notifier activated successfully!"
+msgstr ""
+
+#: admin/class-admin.php:76
+msgid "Configure now"
+msgstr ""
+
+#: admin/class-admin.php:85
+msgid "WP Telegram Post Notifier: Bot token is not configured."
+msgstr ""
+
+#: admin/class-admin.php:86
+msgid "Configure now"
+msgstr ""
+
+#: admin/class-admin.php:95
+msgid "WP Telegram Post Notifier: No destinations configured."
+msgstr ""
+
+#: admin/class-admin.php:96
+msgid "Configure now"
+msgstr ""
+
+#: admin/class-admin.php:110
+msgid "Please provide both message and destination."
+msgstr ""
+
+#: admin/class-admin.php:120
+msgid "Test message sent successfully!"
+msgstr ""
+
+#: admin/class-admin.php:125
+msgid "Failed to send test message: "
+msgstr ""
+
+#: admin/class-admin.php:135
+msgid "Cleared %d log entries."
+msgstr ""
+
+#: admin/class-admin.php:150
+msgid "Send to Telegram"
+msgstr ""
+
+#: admin/class-admin.php:151
+msgid "Send this post to Telegram now?"
+msgstr ""
+
+#: admin/class-admin.php:160
+msgid "Send to Telegram"
+msgstr ""
+
+#: admin/class-admin.php:200
+msgid "WP Telegram Post Notifier Settings"
+msgstr ""
+
+#: admin/class-admin.php:220
+msgid "Statistics"
+msgstr ""
+
+#: admin/class-admin.php:221
+msgid "Total: %d | Success: %d | Errors: %d"
+msgstr ""
+
+#: admin/class-admin.php:225
+msgid "Clear All Logs"
+msgstr ""
+
+#: admin/class-admin.php:226
+msgid "Are you sure you want to clear all logs?"
+msgstr ""
+
+#: admin/class-admin.php:240
+msgid "ID"
+msgstr ""
+
+#: admin/class-admin.php:241
+msgid "Post"
+msgstr ""
+
+#: admin/class-admin.php:242
+msgid "Event"
+msgstr ""
+
+#: admin/class-admin.php:243
+msgid "Destination"
+msgstr ""
+
+#: admin/class-admin.php:244
+msgid "Status"
+msgstr ""
+
+#: admin/class-admin.php:245
+msgid "Message"
+msgstr ""
+
+#: admin/class-admin.php:246
+msgid "Error"
+msgstr ""
+
+#: admin/class-admin.php:247
+msgid "Date"
+msgstr ""
+
+#: admin/class-admin.php:250
+msgid "No logs found."
+msgstr ""
+
+#: admin/class-admin.php:270
+msgid "Save Changes"
+msgstr ""
+
+#: admin/class-admin.php:271
+msgid "Saving..."
+msgstr ""
+
+#: admin/class-admin.php:272
+msgid "Settings saved successfully!"
+msgstr ""
+
+#: admin/class-admin.php:273
+msgid "An error occurred. Please try again."
+msgstr ""
+
+#: admin/class-admin.php:274
+msgid "Are you sure?"
+msgstr ""
+
+#: admin/class-admin.php:275
+msgid "Test Connection"
+msgstr ""
+
+#: admin/class-admin.php:276
+msgid "Send Test Message"
+msgstr ""
+
+#: admin/class-admin.php:277
+msgid "Preview"
+msgstr ""
+
+#: admin/src/components/App.tsx:25
+msgid "Loading..."
+msgstr ""
+
+#: admin/src/components/App.tsx:33
+msgid "Error:"
+msgstr ""
+
+#: admin/src/components/App.tsx:50
+msgid "Connection"
+msgstr ""
+
+#: admin/src/components/App.tsx:55
+msgid "Destinations"
+msgstr ""
+
+#: admin/src/components/App.tsx:60
+msgid "Routing Rules"
+msgstr ""
+
+#: admin/src/components/App.tsx:65
+msgid "Template"
+msgstr ""
+
+#: admin/src/components/App.tsx:70
+msgid "Delivery Options"
+msgstr ""
+
+#: admin/src/components/App.tsx:75
+msgid "Advanced"
+msgstr ""
+
+#: admin/src/components/App.tsx:80
+msgid "Logs"
+msgstr ""
+
+#: admin/src/components/ConnectionTab.tsx:25
+msgid "Bot Configuration"
+msgstr ""
+
+#: admin/src/components/ConnectionTab.tsx:30
+msgid "Configure your Telegram bot token to enable notifications. You can get a bot token from @BotFather on Telegram."
+msgstr ""
+
+#: admin/src/components/ConnectionTab.tsx:35
+msgid "Bot Token"
+msgstr ""
+
+#: admin/src/components/ConnectionTab.tsx:40
+msgid "Enter your Telegram bot token. This will be used to send messages to your channels/chats."
+msgstr ""
+
+#: admin/src/components/ConnectionTab.tsx:45
+msgid "Hide"
+msgstr ""
+
+#: admin/src/components/ConnectionTab.tsx:46
+msgid "Reveal"
+msgstr ""
+
+#: admin/src/components/ConnectionTab.tsx:55
+msgid "Save Bot Token"
+msgstr ""
+
+#: admin/src/components/ConnectionTab.tsx:62
+msgid "Testing..."
+msgstr ""
+
+#: admin/src/components/ConnectionTab.tsx:63
+msgid "Test Connection"
+msgstr ""
+
+#: admin/src/components/ConnectionTab.tsx:75
+msgid "Getting Started"
+msgstr ""
+
+#: admin/src/components/ConnectionTab.tsx:80
+msgid "Open Telegram and search for @BotFather"
+msgstr ""
+
+#: admin/src/components/ConnectionTab.tsx:84
+msgid "Send /newbot command and follow the instructions"
+msgstr ""
+
+#: admin/src/components/ConnectionTab.tsx:88
+msgid "Copy the bot token and paste it above"
+msgstr ""
+
+#: admin/src/components/ConnectionTab.tsx:92
+msgid "Add your bot to your channel/group and make it an admin"
+msgstr ""
+
+#: admin/src/components/ConnectionTab.tsx:96
+msgid "Test the connection using the button above"
+msgstr ""
+
+#: admin/src/components/DestinationsTab.tsx:25
+msgid "Destinations"
+msgstr ""
+
+#: admin/src/components/DestinationsTab.tsx:30
+msgid "Add channels or chats where you want to send notifications. You can add multiple destinations."
+msgstr ""
+
+#: admin/src/components/DestinationsTab.tsx:35
+msgid "Name"
+msgstr ""
+
+#: admin/src/components/DestinationsTab.tsx:40
+msgid "e.g., My Channel"
+msgstr ""
+
+#: admin/src/components/DestinationsTab.tsx:45
+msgid "Chat ID"
+msgstr ""
+
+#: admin/src/components/DestinationsTab.tsx:50
+msgid "e.g., @mychannel or -1001234567890"
+msgstr ""
+
+#: admin/src/components/DestinationsTab.tsx:55
+msgid "Use @channelname for public channels or -1001234567890 for private channels/groups"
+msgstr ""
+
+#: admin/src/components/DestinationsTab.tsx:60
+msgid "Add Destination"
+msgstr ""
+
+#: admin/src/components/DestinationsTab.tsx:65
+msgid "No destinations configured. Add one above to get started."
+msgstr ""
+
+#: admin/src/components/DestinationsTab.tsx:75
+msgid "Enabled"
+msgstr ""
+
+#: admin/src/components/DestinationsTab.tsx:76
+msgid "Disabled"
+msgstr ""
+
+#: admin/src/components/DestinationsTab.tsx:85
+msgid "Disable"
+msgstr ""
+
+#: admin/src/components/DestinationsTab.tsx:86
+msgid "Enable"
+msgstr ""
+
+#: admin/src/components/DestinationsTab.tsx:93
+msgid "Remove"
+msgstr ""
+
+#: admin/src/components/TemplateTab.tsx:25
+msgid "Message Template"
+msgstr ""
+
+#: admin/src/components/TemplateTab.tsx:30
+msgid "Customize the message template that will be sent to Telegram. Use tokens to insert dynamic content."
+msgstr ""
+
+#: admin/src/components/TemplateTab.tsx:35
+msgid "Template"
+msgstr ""
+
+#: admin/src/components/TemplateTab.tsx:45
+msgid "Available tokens: {post_title}, {post_excerpt}, {post_url}, {site_name}, {post_author}, {post_date}, {categories}, {tags}"
+msgstr ""
+
+#: admin/src/components/TemplateTab.tsx:50
+msgid "Save Template"
+msgstr ""
+
+#: admin/src/components/TemplateTab.tsx:55
+msgid "Preview"
+msgstr ""
+
+#: admin/src/components/TemplateTab.tsx:65
+msgid "Preview:"
+msgstr ""
+
+#: admin/src/components/LogsTab.tsx:25
+msgid "Loading logs..."
+msgstr ""
+
+#: admin/src/components/LogsTab.tsx:35
+msgid "Notification Logs"
+msgstr ""
+
+#: admin/src/components/LogsTab.tsx:40
+msgid "No logs found. Logs will appear here when notifications are sent."
+msgstr ""
+
+#: admin/src/components/LogsTab.tsx:50
+msgid "ID"
+msgstr ""
+
+#: admin/src/components/LogsTab.tsx:51
+msgid "Post"
+msgstr ""
+
+#: admin/src/components/LogsTab.tsx:52
+msgid "Event"
+msgstr ""
+
+#: admin/src/components/LogsTab.tsx:53
+msgid "Destination"
+msgstr ""
+
+#: admin/src/components/LogsTab.tsx:54
+msgid "Status"
+msgstr ""
+
+#: admin/src/components/LogsTab.tsx:55
+msgid "Date"
+msgstr ""
+
+#: public/class-gutenberg.php:25
+msgid "Telegram Notifier"
+msgstr ""
+
+#: public/class-gutenberg.php:30
+msgid "Notify on update"
+msgstr ""
+
+#: public/class-gutenberg.php:31
+msgid "Send notification when this post is updated"
+msgstr ""
+
+#: public/class-gutenberg.php:35
+msgid "Custom template"
+msgstr ""
+
+#: public/class-gutenberg.php:36
+msgid "Override default template for this post"
+msgstr ""
+
+#: public/class-gutenberg.php:40
+msgid "Preview template"
+msgstr ""
+
+#: public/class-gutenberg.php:41
+msgid "Send test notification"
+msgstr ""
+
+#: public/class-gutenberg.php:42
+msgid "Test notification sent!"
+msgstr ""
+
+#: public/class-gutenberg.php:43
+msgid "Failed to send test notification"
+msgstr ""
+
+#: public/class-gutenberg.php:44
+msgid "Preview"
+msgstr ""
+
+#: public/class-gutenberg.php:45
+msgid "Close"
+msgstr ""
+
+#: public/class-gutenberg.php:46
+msgid "Loading..."
+msgstr ""

@@ -12,10 +12,17 @@ git clone https://github.com/VoxHash/WPTelegram-Post-Notifier.git
 cd WPTelegram-Post-Notifier
 
 # Install deps
-npm install
+npm install --legacy-peer-deps
 composer install
 
-# Run tests
+# Build admin assets
+npm run build
+
+# Lint
+npm run lint:js
+composer phpcs
+
+# Tests (requires WordPress test suite in WP_TESTS_DIR)
 npm run test
 npm run e2e
 ```

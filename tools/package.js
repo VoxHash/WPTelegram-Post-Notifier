@@ -2,20 +2,20 @@ const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 
-// Create dist directory
-const distDir = path.join(__dirname, '..', 'dist');
+const root = path.join(__dirname, '..');
+const distDir = path.join(root, 'dist');
 if (!fs.existsSync(distDir)) {
     fs.mkdirSync(distDir, { recursive: true });
 }
 
-// Plugin files to include
+// Only ship runtime plugin files (not Composer/npm toolchains).
 const pluginFiles = [
     'wp-telegram-post-notifier.php',
     'uninstall.php',
     'includes/',
     'admin/',
     'public/',
-    'vendor/',
+    'vendor/action-scheduler/',
     'languages/',
     'assets/',
     'README.md',
@@ -23,32 +23,49 @@ const pluginFiles = [
     'LICENSE',
 ];
 
-// Create temporary directory
 const tempDir = path.join(distDir, 'temp');
 if (fs.existsSync(tempDir)) {
     fs.rmSync(tempDir, { recursive: true });
 }
 fs.mkdirSync(tempDir, { recursive: true });
 
-// Copy plugin files
-console.log('Copying plugin files...');
-pluginFiles.forEach(file => {
-    const srcPath = path.join(__dirname, '..', file);
-    const destPath = path.join(tempDir, file);
-    
-    if (fs.existsSync(srcPath)) {
-        if (fs.statSync(srcPath).isDirectory()) {
-            fs.cpSync(srcPath, destPath, { recursive: true });
-        } else {
-            fs.copyFileSync(srcPath, destPath);
+const skipDirs = new Set(['node_modules', 'src', '.git']);
+
+function copyRecursive(src, dest) {
+    const stat = fs.statSync(src);
+    if (stat.isDirectory()) {
+        const base = path.basename(src);
+        if (skipDirs.has(base)) {
+            return;
         }
-        console.log(`✓ ${file}`);
-    } else {
-        console.log(`⚠ ${file} not found`);
+        fs.mkdirSync(dest, { recursive: true });
+        for (const entry of fs.readdirSync(src)) {
+            if (skipDirs.has(entry)) {
+                continue;
+            }
+            // Do not ship TypeScript sources or empty build placeholders incorrectly
+            copyRecursive(path.join(src, entry), path.join(dest, entry));
+        }
+        return;
     }
+    fs.mkdirSync(path.dirname(dest), { recursive: true });
+    fs.copyFileSync(src, dest);
+}
+
+console.log('Copying plugin files...');
+pluginFiles.forEach((file) => {
+    const srcPath = path.join(root, file);
+    const destPath = path.join(tempDir, file);
+
+    if (!fs.existsSync(srcPath)) {
+        console.log(`⚠ ${file} not found`);
+        return;
+    }
+
+    copyRecursive(srcPath, destPath);
+    console.log(`✓ ${file}`);
 });
 
-// Create zip file
 const zipPath = path.join(distDir, 'wp-telegram-post-notifier.zip');
 console.log('Creating zip file...');
 
@@ -60,6 +77,5 @@ try {
     process.exit(1);
 }
 
-// Clean up
 fs.rmSync(tempDir, { recursive: true });
 console.log('✓ Package created successfully!');

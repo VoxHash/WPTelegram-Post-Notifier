@@ -34,15 +34,18 @@
 
 ```bash
 # 1) Install
-npm install
+npm install --legacy-peer-deps
 composer install
 
 # 2) Build
 npm run build
 
-# 3) Run tests
-npm run test
+# 3) Lint / package
+npm run lint:js
+npm run package
 ```
+
+PHPUnit (`npm run test`) requires the WordPress test suite at `WP_TESTS_DIR` (default `/tmp/wordpress-tests-lib/`).
 
 ## 💿 Installation
 

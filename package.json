@@ -6,9 +6,8 @@
   "scripts": {
     "start": "wp-scripts start",
     "build": "wp-scripts build",
-    "lint:php": "phpcs --standard=phpcs.xml",
-    "lint:js": "eslint admin/src --ext .ts,.tsx,.js",
-    "test": "phpunit --colors=always",
+    "test": "vendor/bin/phpunit --colors=always",
+    "lint:php": "vendor/bin/phpcs --standard=phpcs.xml",
     "e2e": "playwright test",
     "package": "node ./tools/package.js"
   },
@@ -22,14 +21,16 @@
   "author": "VoxHash <contact@voxhash.dev>",
   "license": "MIT",
   "devDependencies": {
-    "@wordpress/scripts": "^26.0.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
+    "@wordpress/scripts": "^26.0.0",
+    "ajv": "^8.20.0",
     "eslint": "^8.0.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
+    "playwright": "^1.40.0",
     "prettier": "^3.0.0",
-    "playwright": "^1.40.0"
+    "typescript": "~5.4.5"
   },
   "dependencies": {
     "@wordpress/api-fetch": "^6.0.0",

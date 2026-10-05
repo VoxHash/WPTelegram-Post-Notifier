@@ -326,7 +326,7 @@ function get_plugin_path($path = '') {
  * @return string
  */
 function get_asset_url($asset) {
-    return get_plugin_url('assets/' . ltrim($asset, '/'));
+    return get_plugin_url(ltrim($asset, '/'));
 }
 
 /**

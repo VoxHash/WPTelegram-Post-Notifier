@@ -12,7 +12,7 @@
     <!-- How to scan -->
     <arg name="colors" />
     <arg name="extensions" value="php" />
-    <arg value="parallel" />
+    <arg name="parallel" value="4" />
     
     <!-- Rules: Check PHP version compatibility -->
     <config name="minimum_supported_wp_version" value="6.3" />
@@ -24,11 +24,6 @@
     
     <!-- Allow short array syntax -->
     <rule ref="Generic.Arrays.DisallowShortArraySyntax">
-        <severity>0</severity>
-    </rule>
-    
-    <!-- Allow short ternary -->
-    <rule ref="WordPress.PHP.DisallowShortTernary">
         <severity>0</severity>
     </rule>
     
